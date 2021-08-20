@@ -85,8 +85,9 @@ document.getElementById("apply-button").addEventListener('click', function () {
     document.getElementById("total-charge").innerText = totalCharge;
     const promoInput = document.getElementById("promo-input").value;
     if (promoInput == "stevekaku") {
-        document.getElementById("apply-button").removeAttribute('disabled');
-        document.getElementById("total-overallAll").innerText = totalCharge / 20;
+        // document.getElementById("apply-button").removeAttribute('disabled');
+        document.getElementById("total-overallAll").innerText = totalCharge * 0.8;
+        // 1299(1-0.2) calculation for 20%
 
     }
     else {
