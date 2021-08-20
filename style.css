@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+p{
+    color:darkslategrey;
+    text-align: justify;
+    font-size: 15px;
+}
+h1{
+    font-size:x-large;
+    font-weight: bold;
+}
+.half-width{
+    width:70%;
+    padding-left: 20%;
+    margin-top: 100px;   
+    padding-right: 2%;
+}
+.text-width{
+   padding-right: 10%; 
+}
+.half-width img{
+   width:100%;
+    margin-top: -80px;
+   
+}
+.flexible-container{
+    display: flex;
+    margin-bottom: 50px;
+}
+.total-section{
+   width:100%;
+   
+   align-content: center;
+}
