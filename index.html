@@ -38,20 +38,24 @@
                 </div>
                 <div class="my-3">
                     <p class="mb-1 fw-bold">Storage</p>
-                    <button type="button" class="p-1 rounded btn btn-light border-1 fs-6 border border-secondary">256GB
+                    <button id="256gd-ssd" type="button"
+                        class="p-1 rounded btn btn-light border-1 fs-6 border border-secondary">256GB
                         SSD storage</button>
-                    <button type="button" class="p-1 rounded btn btn-light border-1 fs-6 border border-secondary">512GB
+                    <button id="512gd-ssd" type="button"
+                        class="p-1 rounded btn btn-light border-1 fs-6 border border-secondary">512GB
                         SSD storage</button>
-                    <button type="button" class="p-1 rounded btn btn-light border-1 fs-6 border border-secondary">1TB
+                    <button id="1tb-ssd" type="button"
+                        class="p-1 rounded btn btn-light border-1 fs-6 border border-secondary">1TB
                         SSD storage</button>
                 </div>
                 <div class="my-3">
                     <p class="mb-1 fw-bold">Choose your delivery option</p>
-                    <button type="button"
+                    <button id="free-delivery" type="button"
                         class="p-1 rounded btn btn-light border-1 fs-6 border border-secondary">Friday, Aug 25 FREE
                         Prime
                         Delivery</button>
-                    <button type="button" class="p-1 rounded btn btn-light border-1 fs-6  border-secondary">Friday, Aug
+                    <button id="charge-delivery" type="button"
+                        class="p-1 rounded btn btn-light border-1 fs-6  border-secondary">Friday, Aug
                         21 Delivery
                         charge
                         $20</button>
@@ -82,7 +86,7 @@
                         <hr>
                         <h6 class="fw-bold">$<span id="delivery-charge">0</span></h6>
                         <hr style="color: black">
-                        <h6 class="fw-bold">$<span id="delivery-charge">1299</span></h6>
+                        <h6 class="fw-bold">$<span id="total-charge">1299</span></h6>
                     </div>
                 </div>
             </div>
@@ -90,7 +94,7 @@
                 <h5 class="fw-bold mt-3">Add promo code</h5>
                 <div>
                     <input id="promo-input" class="border block border-gray-400	rounded px-2" type="text">
-                    <button id="promo-button" class="bg-danger px-2 rounded py-1 text-white ">Apply</button>
+                    <button id="apply-button" class="bg-danger px-2 rounded py-1 text-white ">Apply</button>
                 </div>
             </div>
         </div>
@@ -98,7 +102,7 @@
     <section class="total-section px-5">
         <div>
             <hr>
-            <h1 class="text-center">Total:$<span id="total-charge">1299</span></h1>
+            <h1 class="text-center">Total:$<span id="total-overallAll">1299</span></h1>
         </div>
     </section>
     <script src="app.js"></script>
