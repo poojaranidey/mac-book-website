@@ -85,6 +85,11 @@ document.getElementById("apply-button").addEventListener('click', function () {
     document.getElementById("total-charge").innerText = totalCharge;
     const promoInput = document.getElementById("promo-input").value;
     if (promoInput == "stevekaku") {
-        document.getElementById("total-overallAll").innerText = totalCharge / 25;
+        document.getElementById("apply-button").removeAttribute('disabled');
+        document.getElementById("total-overallAll").innerText = totalCharge / 20;
+
     }
-})
+    else {
+        document.getElementById("apply-button").setAttribute('disabled', true);
+    }
+});
