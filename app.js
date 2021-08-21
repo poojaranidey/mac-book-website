@@ -40,6 +40,8 @@ function calculateTotal() {
     const deliveryChargeTotal = document.getElementById("delivery-charge").innerText;
     const totalCharge = 1299 + parseInt(extraMemoryTotal) + parseInt(extraStorageTotal) + parseInt(deliveryChargeTotal);
     document.getElementById("total-charge").innerText = totalCharge;
+    const totalOverAll = document.getElementById("total-overAll");
+    totalOverAll.innerText = totalCharge;
 }
 
 // extra memory 
@@ -76,6 +78,9 @@ document.getElementById("charge-delivery").addEventListener('click', function ()
     calculateTotal();
 });
 
+// total overall price 
+
+
 // total price using promo code
 document.getElementById("apply-button").addEventListener('click', function () {
     const extraMemoryTotal = document.getElementById("extra-memory").innerText;
@@ -83,14 +88,16 @@ document.getElementById("apply-button").addEventListener('click', function () {
     const deliveryChargeTotal = document.getElementById("delivery-charge").innerText;
     const totalCharge = 1299 + parseInt(extraMemoryTotal) + parseInt(extraStorageTotal) + parseInt(deliveryChargeTotal);
     document.getElementById("total-charge").innerText = totalCharge;
-    const promoInput = document.getElementById("promo-input").value;
-    if (promoInput == "stevekaku") {
+    const promoInput = document.getElementById("promo-input");
+    if (promoInput.value == "stevekaku") {
         // document.getElementById("apply-button").removeAttribute('disabled');
-        document.getElementById("total-overallAll").innerText = totalCharge * 0.8;
+        document.getElementById("total-overAll").innerText = totalCharge * 0.8;
         // 1299(1-0.2) calculation for 20%
+    }
+    // else {
 
-    }
-    else {
-        document.getElementById("apply-button").setAttribute('disabled', true);
-    }
+    //     document.getElementById("apply-button").setAttribute('disabled', true);
+    // }
+    promoInput.value = "";
+
 });
