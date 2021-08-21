@@ -6,92 +6,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac-book-pro</title>
+    <!-- font family stylesheet  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css style link  -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+    <!-- mac book pro details  -->
     <section class=" flexible-container">
         <div class='half-width'>
             <img src="images/mac.png" alt="">
         </div>
         <div class='text-width'>
-            <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos illum quod temporibus perspiciatis
-                error! Repudiandae voluptatem assumenda quod aspernatur ipsum!
+            <h1 class="w-75">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+            <p class="w-75">
+                Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores,7-core GPU,and 16-core
+                Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4ports Magic Mouse Magic
+                Keyboard-US English.
             </p>
+            <!-- extra memory, storage, delivery charge details  -->
             <div>
-                <div class="my-3">
-                    <p class="mb-1 fw-bold">Memory</p>
+                <div class="my-5">
+                    <h6 class="mb-1 fw-bold">Memory</h6>
                     <button id="8gb-memory" type="button"
-                        class="p-1 rounded btn btn-light border-1 fs-6 border border-secondary">8GB
-                        unified Memory</button>
+                        class="p-1 rounded btn btn-white border-2 fs-6 border border-secondary button ">8GB
+                        unified memory</button>
                     <button id="16gb-memory" type="button"
-                        class="p-1 rounded btn btn-light border-1 fs-6 border border-secondary">16GB
-                        unified Memory</button>
+                        class="p-1 rounded btn btn-white border-2 fs-6 border border-secondary button">16GB
+                        unified memory</button>
                 </div>
-                <div class="my-3">
-                    <p class="mb-1 fw-bold">Storage</p>
+                <div class="my-5">
+                    <h6 class="mb-1 fw-bold">Storage</h6>
                     <button id="256gd-ssd" type="button"
-                        class="p-1 rounded btn btn-light border-1 fs-6 border border-secondary">256GB
+                        class="p-1 rounded btn btn-white border-2 fs-6 border border-secondary button">256GB
                         SSD storage</button>
                     <button id="512gd-ssd" type="button"
-                        class="p-1 rounded btn btn-light border-1 fs-6 border border-secondary">512GB
+                        class="p-1 rounded btn btn-white border-2 fs-6 border border-secondary button">512GB
                         SSD storage</button>
                     <button id="1tb-ssd" type="button"
-                        class="p-1 rounded btn btn-light border-1 fs-6 border border-secondary">1TB
+                        class="p-1 rounded btn btn-white border-2 fs-6 border border-secondary button">1TB
                         SSD storage</button>
                 </div>
-                <div class="my-3">
-                    <p class="mb-1 fw-bold">Choose your delivery option</p>
+                <div class="my-5">
+                    <h6 class="mb-1 fw-bold">Choose your delivery option</h6>
                     <button id="free-delivery" type="button"
-                        class="p-1 rounded btn btn-light border-1 fs-6 border border-secondary">Friday, Aug 25 FREE
+                        class="p-1 rounded btn btn-white border-2 fs-6 border border-secondary button">Friday, Aug 25
+                        FREE
                         Prime
                         Delivery</button>
                     <button id="charge-delivery" type="button"
-                        class="p-1 rounded btn btn-light border-1 fs-6  border-secondary">Friday, Aug
+                        class="p-1 rounded btn btn-white border-2 fs-6  border-secondary button">Friday, Aug
                         21 Delivery
                         charge
                         $20</button>
                 </div>
             </div>
+            <!-- total prices for memory, storage and delivery charge -->
+            <div>
+                <table class="table w-50 mt-4">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Best Price</th>
+                            <td class="fw-bold">$<span id="best-price">1299</span></td>
 
-            <div class="cart-item">
-                <div class="row">
-
-                    <div class="col-md-5">
-                        <h6 class="fw-bold">Best Price </h6>
-                        <hr>
-                        <h6 class="fw-bold">Extra Memory Cost</h6>
-                        <hr>
-                        <h6 class="fw-bold">Extra Storage Cost</h6>
-                        <hr>
-                        <h6 class="fw-bold">Delivery Charge</h6>
-                        <hr>
-                        <h6 class="fw-bold">Total Price</h6>
-                    </div>
-
-                    <div class="col-md-5 status">
-                        <h6 class="fw-bold">$<span id="best-price">1299</span></h6>
-                        <hr>
-                        <h6 class="fw-bold">$<span id="extra-memory">0</span></h6>
-                        <hr>
-                        <h6 class="fw-bold">$<span id="extra-storage">0</span></h6>
-                        <hr>
-                        <h6 class="fw-bold">$<span id="delivery-charge">0</span></h6>
-                        <hr style="color: black">
-                        <h6 class="fw-bold">$<span id="total-charge">1299</span></h6>
-                    </div>
-                </div>
+                        </tr>
+                        <tr>
+                            <th scope="row">Extra Memory Cost</th>
+                            <td class="fw-bold">$<span id="extra-memory">0</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Extra Storage Cost</th>
+                            <td class="fw-bold">$<span id="extra-storage">0</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Delivery Charge</th>
+                            <td class="fw-bold">$<span id="delivery-charge">0</span></td>
+                        </tr>
+                    </tbody>
+                    <tr>
+                        <th scope="row">Total Price</th>
+                        <td class="fw-bold">$<span id="total-charge">1299</span></td>
+                    </tr>
+                </table>
             </div>
+            <!-- Adding promo code  -->
             <div class="rounded">
-                <h5 class="fw-bold mt-3">Add promo code</h5>
+                <h6 class="fw-bold mt-3">Add promo code</h6>
                 <div>
                     <input id="promo-input" class="border block border-gray-400	rounded px-2" type="text">
                     <button id="apply-button" class="bg-danger px-2 rounded py-1 text-white ">Apply</button>
@@ -99,12 +106,14 @@
             </div>
         </div>
     </section>
+    <!-- Overall total price section  -->
     <section class="total-section px-5">
         <div>
             <hr>
-            <h1 class="text-center">Total:$<span id="total-overAll">1299</span></h1>
+            <h1 class="text-center fw-bold">Total: $<span id="total-overAll">1299</span></h1>
         </div>
     </section>
+    <!-- javascript link  -->
     <script src="app.js"></script>
 </body>
 

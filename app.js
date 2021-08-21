@@ -1,4 +1,4 @@
-// fuction for extra memory 
+// function for extra memory 
 function memoryCharge(memoryChargeId) {
     const extraMemory = document.getElementById("extra-memory");
     if (memoryChargeId == true) {
@@ -33,7 +33,7 @@ function deliveryCharge(chargeForDelivery) {
         deliveryChargeId.innerText = 20;
     }
 }
-
+// function for calculate total priceand overall price 
 function calculateTotal() {
     const extraMemoryTotal = document.getElementById("extra-memory").innerText;
     const extraStorageTotal = document.getElementById("extra-storage").innerText;
@@ -78,9 +78,6 @@ document.getElementById("charge-delivery").addEventListener('click', function ()
     calculateTotal();
 });
 
-// total overall price 
-
-
 // total price using promo code
 document.getElementById("apply-button").addEventListener('click', function () {
     const extraMemoryTotal = document.getElementById("extra-memory").innerText;
@@ -90,14 +87,7 @@ document.getElementById("apply-button").addEventListener('click', function () {
     document.getElementById("total-charge").innerText = totalCharge;
     const promoInput = document.getElementById("promo-input");
     if (promoInput.value == "stevekaku") {
-        // document.getElementById("apply-button").removeAttribute('disabled');
-        document.getElementById("total-overAll").innerText = totalCharge * 0.8;
-        // 1299(1-0.2) calculation for 20%
+        document.getElementById("total-overAll").innerText = totalCharge - (totalCharge * (20 / 100));
     }
-    // else {
-
-    //     document.getElementById("apply-button").setAttribute('disabled', true);
-    // }
     promoInput.value = "";
-
 });
